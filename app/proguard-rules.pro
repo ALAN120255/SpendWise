@@ -1,0 +1,3 @@
+-keep class com.example.spendwise.** { *; }
+-keep class com.google.firebase.** { *; }
+-dontwarn com.google.firebase.**
