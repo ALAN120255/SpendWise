@@ -37,6 +37,4 @@
     <string name="new_password_hint">New Password</string>
     <string name="no_transactions">No transactions yet</string>
     <string name="budget_set_hint">Enter monthly budget amount</string>
-    <!-- IMPORTANT: Replace with your actual Web Client ID from Firebase Console -->
-    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
 </resources>

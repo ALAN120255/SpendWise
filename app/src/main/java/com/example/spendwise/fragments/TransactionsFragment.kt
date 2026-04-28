@@ -85,7 +85,7 @@ class TransactionsFragment : Fragment() {
                     lifecycleScope.launch {
                         if (item.isExpense) repo.deleteExpense(item.id)
                         else repo.deleteIncome(item.id)
-                        loadTransactions(chipGroup, etSearch.text.toString())
+                        refreshData(chipGroup, etSearch.text.toString())
                     }
                 }
                 .setNegativeButton("Cancel", null).show()
@@ -101,10 +101,10 @@ class TransactionsFragment : Fragment() {
 
         chipGroup.setOnCheckedStateChangeListener { _, _ -> filterList(chipGroup, etSearch.text.toString()) }
         fab.setOnClickListener { showAddDialog(sym) }
-        loadTransactions(chipGroup, "")
+        refreshData(chipGroup, "")
     }
 
-    private fun loadTransactions(chipGroup: ChipGroup, query: String) {
+    private fun refreshData(chipGroup: ChipGroup, query: String) {
         lifecycleScope.launch {
             val expenses = repo.getExpenses().map {
                 TransactionItem(it.id, it.amount, it.category, it.description, it.date, true, it.getCategoryIcon(), it.photoUrl)
@@ -229,7 +229,7 @@ class TransactionsFragment : Fragment() {
                         ))
                     }
                     dialog.dismiss()
-                    view?.let { loadTransactions(it.findViewById(R.id.chip_group_filter), "") }
+                    view?.let { refreshData(it.findViewById(R.id.chip_group_filter), "") }
                 } catch (e: Exception) {
                     Toast.makeText(context, "Save failed: ${e.message}", Toast.LENGTH_SHORT).show()
                 }
@@ -241,6 +241,6 @@ class TransactionsFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        view?.let { loadTransactions(it.findViewById(R.id.chip_group_filter), "") }
+        view?.let { refreshData(it.findViewById(R.id.chip_group_filter), "") }
     }
 }

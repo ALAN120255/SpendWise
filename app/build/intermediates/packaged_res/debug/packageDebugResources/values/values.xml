@@ -38,7 +38,6 @@
     <string name="current_budget">Current Budget: $0</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="dashboard">Dashboard</string>
-    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
     <string name="delete">Delete</string>
     <string name="description_hint">Description (optional)</string>
     <string name="email_hint">Email</string>

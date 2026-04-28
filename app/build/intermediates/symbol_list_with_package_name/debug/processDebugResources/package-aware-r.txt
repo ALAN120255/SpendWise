@@ -4150,7 +4150,6 @@ string currency
 string current_budget
 string dark_mode
 string dashboard
-string default_web_client_id
 string delete
 string description_hint
 string dest_title

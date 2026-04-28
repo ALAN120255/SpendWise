@@ -1,158 +1,154 @@
 [
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_fragment_transactions.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\fragment_transactions.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_fragment_budget.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/fragment_budget.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_dashboard.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_dashboard.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_spinner_background.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/spinner_background.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-hdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-xxxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-xxxhdpi\\ic_launcher.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_dashboard.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_add.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_add.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-mdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-hdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-hdpi\\ic_launcher_round.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-xhdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_spinner_background.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\spinner_background.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_add_photo.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_add_photo.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_add_photo.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_add_photo.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_budget.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_budget.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_activity_profile.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/activity_profile.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_delete.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_delete.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_settings.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_settings.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_fragment_dashboard.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\fragment_dashboard.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_delete.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_delete.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_transactions.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_transactions.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_activity_splash.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/activity_splash.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_settings.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_settings.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-xxhdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-xxhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-xxhdpi\\ic_launcher.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_fragment_dashboard.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/fragment_dashboard.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\activity_register.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_transactions.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_transactions.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_search.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_search.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_dialog_add_transaction.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/dialog_add_transaction.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\activity_main.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_splash_background.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/splash_background.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-xxxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-xxxhdpi\\ic_launcher_round.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_activity_login.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_dialog_add_transaction.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\dialog_add_transaction.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_activity_register.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\activity_login.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_activity_main.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-hdpi\\ic_launcher.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_item_transaction.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\item_transaction.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_fragment_transactions.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/fragment_transactions.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\activity_profile.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_default_avatar.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_default_avatar.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_fragment_budget.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\fragment_budget.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-xxxhdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_budget.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_budget.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-xxhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-xxhdpi\\ic_launcher_round.xml"
+        "merged": "com.example.spendwise.app-debug-55:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/menu/bottom_nav_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_bottom_nav_selector.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\bottom_nav_selector.xml"
+        "merged": "com.example.spendwise.app-debug-55:/layout_fragment_settings.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/fragment_settings.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_ic_default_avatar.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\ic_default_avatar.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-hdpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_fragment_settings.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\fragment_settings.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-mdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-xhdpi\\ic_launcher_round.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-mdpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-mdpi\\ic_launcher_round.xml"
+        "merged": "com.example.spendwise.app-debug-55:/xml_file_paths.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/xml/file_paths.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\layout_activity_splash.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\layout\\activity_splash.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_add.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_add.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-xhdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-xhdpi\\ic_launcher.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-xxxhdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\menu\\bottom_nav_menu.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_search.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_search.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-xxhdpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\mipmap-mdpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\mipmap-mdpi\\ic_launcher.xml"
+        "merged": "com.example.spendwise.app-debug-55:/drawable_bottom_nav_selector.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/bottom_nav_selector.xml"
+    },
+    {
+        "merged": "com.example.spendwise.app-debug-55:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/mipmap-xhdpi/ic_launcher.xml"
     },
     {
         "merged": "com.example.spendwise.app-debug-55:/layout_item_transaction.xml.flat",
         "source": "com.example.spendwise.app-main-57:/layout/item_transaction.xml"
-    },
-    {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\drawable_splash_background.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\drawable\\splash_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-debug-55:\\xml_file_paths.xml.flat",
-        "source": "C:\\Users\\Alan Chauke\\.gradle\\daemon\\9.4.1\\com.example.spendwise.app-main-57:\\xml\\file_paths.xml"
     }
 ]
