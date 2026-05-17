@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [UserEntity::class, ExpenseEntity::class, IncomeEntity::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class SpendWiseDatabase : RoomDatabase() {

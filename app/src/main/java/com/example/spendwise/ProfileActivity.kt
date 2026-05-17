@@ -49,25 +49,34 @@ class ProfileActivity : AppCompatActivity() {
         val etNewEmail = findViewById<TextInputEditText>(R.id.et_new_email)
         val etNewPass  = findViewById<TextInputEditText>(R.id.et_new_password)
         val btnPhoto   = findViewById<Button>(R.id.btn_change_photo)
+        val btnTake    = findViewById<Button>(R.id.btn_take_photo)
         val btnUpdate  = findViewById<Button>(R.id.btn_update_profile)
         val btnUpdEmail= findViewById<Button>(R.id.btn_update_email)
         val btnUpdPass = findViewById<Button>(R.id.btn_update_password)
         val progress   = findViewById<ProgressBar>(R.id.progress_bar)
 
         lifecycleScope.launch {
-            val profile = repo.getUserProfile()
-            tvName.text   = profile.fullName().ifBlank { "—" }
-            tvGender.text = profile.gender.ifBlank { "—" }
-            tvEmail.text  = profile.email.ifBlank { "—" }
-            etFirst.setText(profile.firstName)
-            etLast.setText(profile.lastName)
-            if (profile.profileImageUrl.isNotEmpty()) {
-                Glide.with(this@ProfileActivity).load(profile.profileImageUrl)
-                    .circleCrop().placeholder(R.drawable.ic_default_avatar).into(ivPic)
+            try {
+                val profile = repo.getUserProfile()
+                tvName.text   = profile.fullName().ifBlank { "—" }
+                tvGender.text = profile.gender.ifBlank { "—" }
+                tvEmail.text  = profile.email.ifBlank { "—" }
+                etFirst.setText(profile.firstName)
+                etLast.setText(profile.lastName)
+                if (profile.profileImageUrl.isNotEmpty()) {
+                    Glide.with(this@ProfileActivity).load(profile.profileImageUrl)
+                        .circleCrop().placeholder(R.drawable.ic_default_avatar).into(ivPic)
+                }
+            } catch (e: Exception) {
+                Toast.makeText(this@ProfileActivity, "Failed to load profile", Toast.LENGTH_SHORT).show()
             }
         }
 
-        btnPhoto.setOnClickListener { showPhotoOptions() }
+        btnPhoto.setOnClickListener { pickImage.launch("image/*") }
+        btnTake.setOnClickListener { 
+            cameraUri = CameraHelper.createImageUri(this)
+            takePhoto.launch(cameraUri!!)
+        }
 
         btnUpdate.setOnClickListener {
             val fn = etFirst.text.toString().trim()

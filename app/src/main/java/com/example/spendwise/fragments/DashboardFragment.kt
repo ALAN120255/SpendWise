@@ -28,25 +28,32 @@ class DashboardFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val sym = CurrencyRepository(requireContext()).getCurrencySymbol()
+        val sym  = CurrencyRepository(requireContext()).getCurrencySymbol()
         val repo = AppRepository(requireContext())
 
-        val tvIncome   = view.findViewById<TextView>(R.id.tv_total_income)
-        val tvExpenses = view.findViewById<TextView>(R.id.tv_total_expenses)
-        val tvNet      = view.findViewById<TextView>(R.id.tv_net_balance)
-        val pieChart   = view.findViewById<PieChart>(R.id.pie_chart_expenses)
-        val lineChart  = view.findViewById<LineChart>(R.id.line_chart)
-        val tvXpTotal  = view.findViewById<TextView>(R.id.tv_xp_total)
-        val tvBadge    = view.findViewById<TextView>(R.id.tv_level_badge)
-        val tvLevelNum = view.findViewById<TextView>(R.id.tv_level_number)
-        val tvLevelTitle = view.findViewById<TextView>(R.id.tv_level_title)
-        val tvXpLabel  = view.findViewById<TextView>(R.id.tv_xp_progress_label)
-        val pbXp       = view.findViewById<ProgressBar>(R.id.pb_xp)
-        val llLevels   = view.findViewById<LinearLayout>(R.id.ll_levels_container)
+        val tvIncome      = view.findViewById<TextView>(R.id.tv_total_income)
+        val tvExpenses    = view.findViewById<TextView>(R.id.tv_total_expenses)
+        val tvNet         = view.findViewById<TextView>(R.id.tv_net_balance)
+        val pieChart      = view.findViewById<PieChart>(R.id.pie_chart_expenses)
+        val lineChart     = view.findViewById<LineChart>(R.id.line_chart)
+        val tvXpTotal     = view.findViewById<TextView>(R.id.tv_xp_total)
+        val tvBadge       = view.findViewById<TextView>(R.id.tv_level_badge)
+        val tvLevelNum    = view.findViewById<TextView>(R.id.tv_level_number)
+        val tvLevelTitle  = view.findViewById<TextView>(R.id.tv_level_title)
+        val tvXpLabel     = view.findViewById<TextView>(R.id.tv_xp_progress_label)
+        val pbXp          = view.findViewById<ProgressBar>(R.id.pb_xp)
+        val llLevels      = view.findViewById<LinearLayout>(R.id.ll_levels_container)
+        val tvEssential   = view.findViewById<TextView>(R.id.tv_essential_ratio)
 
         viewModel.expenses.observe(viewLifecycleOwner) { expenses ->
-            tvExpenses.text = "$sym%.2f".format(expenses.sumOf { it.amount })
+            val totalSpent = expenses.sumOf { it.amount }
+            tvExpenses.text = "$sym%.2f".format(totalSpent)
             tvNet.text = "$sym%.2f".format(viewModel.getNetBalance())
+
+            // Essential ratio label
+            val essentialSpent = expenses.filter { it.isEssential() }.sumOf { it.amount }
+            val essentialPct = if (totalSpent > 0) ((essentialSpent / totalSpent) * 100).toInt() else 0
+            tvEssential.text = "🛒 $essentialPct% of spending on essential needs"
 
             val byCategory = expenses.groupBy { it.category }
                 .map { (cat, list) -> PieEntry(list.sumOf { it.amount }.toFloat(), cat) }
@@ -62,28 +69,25 @@ class DashboardFragment : Fragment() {
                 pieChart.invalidate()
             }
 
-            // XP
+            // XP — now uses income as budget reference, driven by essential spend
             lifecycleScope.launch {
-                val budget = repo.getBudget()
-                val totalSpent = expenses.sumOf { it.amount }
-                val withinBudget = budget > 0 && totalSpent <= budget
-                val savingsPct = if (budget > 0) (budget - totalSpent) / budget else 0.0
-                val xp = XPSystem.calculateXP(expenses.size, withinBudget, savingsPct)
+                val totalIncome = viewModel.getTotalIncome()
+                val xp = XPSystem.calculateXP(expenses, totalIncome)
                 val level = XPSystem.getLevelForXP(xp)
                 val progress = XPSystem.getProgressPercent(xp)
                 val nextLevel = XPSystem.levels.getOrNull(level.level)
 
-                tvXpTotal.text = "$xp XP"
-                tvBadge.text = level.badge
-                tvLevelNum.text = "Level ${level.level}"
+                tvXpTotal.text   = "$xp XP"
+                tvBadge.text     = level.badge
+                tvLevelNum.text  = "Level ${level.level}"
                 tvLevelTitle.text = level.title
-                pbXp.progress = progress
-                tvXpLabel.text = if (level.level < 5 && nextLevel != null)
+                pbXp.progress    = progress
+                tvXpLabel.text   = if (level.level < 5 && nextLevel != null)
                     "$xp / ${nextLevel.xp} XP to next level" else "Max level! 🎉"
 
                 llLevels.removeAllViews()
                 XPSystem.levels.forEach { lvl ->
-                    val unlocked = xp >= lvl.xp
+                    val unlocked  = xp >= lvl.xp
                     val isCurrent = lvl.level == level.level
                     val row = LinearLayout(requireContext()).apply {
                         orientation = LinearLayout.HORIZONTAL
@@ -123,7 +127,8 @@ class DashboardFragment : Fragment() {
 
         viewModel.incomes.observe(viewLifecycleOwner) { incomes ->
             tvIncome.text = "$sym%.2f".format(incomes.sumOf { it.amount })
-            tvNet.text = "$sym%.2f".format(viewModel.getNetBalance())
+            tvNet.text    = "$sym%.2f".format(viewModel.getNetBalance())
+
             val entries = incomes.takeLast(6).mapIndexed { i, inc -> Entry(i.toFloat(), inc.amount.toFloat()) }
             if (entries.isNotEmpty()) {
                 val ds = LineDataSet(entries, "Income Trend").apply {

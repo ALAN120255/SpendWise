@@ -36,6 +36,9 @@ public final class FragmentDashboardBinding implements ViewBinding {
   public final PieChart pieChartExpenses;
 
   @NonNull
+  public final TextView tvEssentialRatio;
+
+  @NonNull
   public final TextView tvLevelBadge;
 
   @NonNull
@@ -46,9 +49,6 @@ public final class FragmentDashboardBinding implements ViewBinding {
 
   @NonNull
   public final TextView tvNetBalance;
-
-  @NonNull
-  public final TextView tvNetLabel;
 
   @NonNull
   public final TextView tvTotalExpenses;
@@ -64,9 +64,9 @@ public final class FragmentDashboardBinding implements ViewBinding {
 
   private FragmentDashboardBinding(@NonNull ScrollView rootView, @NonNull LineChart lineChart,
       @NonNull LinearLayout llLevelsContainer, @NonNull ProgressBar pbXp,
-      @NonNull PieChart pieChartExpenses, @NonNull TextView tvLevelBadge,
-      @NonNull TextView tvLevelNumber, @NonNull TextView tvLevelTitle,
-      @NonNull TextView tvNetBalance, @NonNull TextView tvNetLabel,
+      @NonNull PieChart pieChartExpenses, @NonNull TextView tvEssentialRatio,
+      @NonNull TextView tvLevelBadge, @NonNull TextView tvLevelNumber,
+      @NonNull TextView tvLevelTitle, @NonNull TextView tvNetBalance,
       @NonNull TextView tvTotalExpenses, @NonNull TextView tvTotalIncome,
       @NonNull TextView tvXpProgressLabel, @NonNull TextView tvXpTotal) {
     this.rootView = rootView;
@@ -74,11 +74,11 @@ public final class FragmentDashboardBinding implements ViewBinding {
     this.llLevelsContainer = llLevelsContainer;
     this.pbXp = pbXp;
     this.pieChartExpenses = pieChartExpenses;
+    this.tvEssentialRatio = tvEssentialRatio;
     this.tvLevelBadge = tvLevelBadge;
     this.tvLevelNumber = tvLevelNumber;
     this.tvLevelTitle = tvLevelTitle;
     this.tvNetBalance = tvNetBalance;
-    this.tvNetLabel = tvNetLabel;
     this.tvTotalExpenses = tvTotalExpenses;
     this.tvTotalIncome = tvTotalIncome;
     this.tvXpProgressLabel = tvXpProgressLabel;
@@ -136,6 +136,12 @@ public final class FragmentDashboardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tv_essential_ratio;
+      TextView tvEssentialRatio = ViewBindings.findChildViewById(rootView, id);
+      if (tvEssentialRatio == null) {
+        break missingId;
+      }
+
       id = R.id.tv_level_badge;
       TextView tvLevelBadge = ViewBindings.findChildViewById(rootView, id);
       if (tvLevelBadge == null) {
@@ -157,12 +163,6 @@ public final class FragmentDashboardBinding implements ViewBinding {
       id = R.id.tv_net_balance;
       TextView tvNetBalance = ViewBindings.findChildViewById(rootView, id);
       if (tvNetBalance == null) {
-        break missingId;
-      }
-
-      id = R.id.tv_net_label;
-      TextView tvNetLabel = ViewBindings.findChildViewById(rootView, id);
-      if (tvNetLabel == null) {
         break missingId;
       }
 
@@ -191,8 +191,8 @@ public final class FragmentDashboardBinding implements ViewBinding {
       }
 
       return new FragmentDashboardBinding((ScrollView) rootView, lineChart, llLevelsContainer, pbXp,
-          pieChartExpenses, tvLevelBadge, tvLevelNumber, tvLevelTitle, tvNetBalance, tvNetLabel,
-          tvTotalExpenses, tvTotalIncome, tvXpProgressLabel, tvXpTotal);
+          pieChartExpenses, tvEssentialRatio, tvLevelBadge, tvLevelNumber, tvLevelTitle,
+          tvNetBalance, tvTotalExpenses, tvTotalIncome, tvXpProgressLabel, tvXpTotal);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

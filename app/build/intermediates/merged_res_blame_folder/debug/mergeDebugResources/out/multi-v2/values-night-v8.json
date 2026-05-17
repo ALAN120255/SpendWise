@@ -4,7 +4,7 @@
             "outputFile": "com.example.spendwise.app-mergeDebugResources-53:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alan Chauke\\AndroidStudioProjects\\SpendWiseFixed\\app\\src\\main\\res\\values-night\\colors.xml",
+                    "source": "C:\\Users\\Alan Chauke\\AndroidStudioProjects\\SpendWise\\app\\src\\main\\res\\values-night\\colors.xml",
                     "from": {
                         "startLines": "6,9,10,11,4,12,7,2,3,5,8",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

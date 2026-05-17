@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:36:9-44:20
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:36:9-44:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:40:13-47
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:40:13-47
 	android:authorities
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:38:13-64
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:38:13-64
 	android:exported
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:39:13-37
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:39:13-37
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:37:13-62
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:37:13-62
 manifest
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:2:1-47:12
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:2:1-47:12
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:2:1-47:12
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:2:1-47:12
 MERGED from [androidx.databinding:viewbinding:9.2.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\b79b910b3b0c971b6f489720fcf2ee19\transformed\jetified-viewbinding-9.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.room:room-runtime-android:2.8.4] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\6cec54ea806eec34b3a3dba5fb54bc11\transformed\jetified-room-runtime\AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.room:room-ktx:2.8.4] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\a9b0007d5f2871942768c9dc0d10679e\transformed\jetified-room-ktx-2.8.4\AndroidManifest.xml:17:1-22:12
@@ -89,44 +89,44 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\c1b9e36f8b45ed940318b73ddf35ac08\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\4f2ad9cd40aa6d8891480e1012dc57e7\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 	package
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:4:5-66
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:4:5-66
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:5:5-76
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:5:5-76
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:5:22-74
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:5:22-74
 uses-permission#android.permission.READ_MEDIA_IMAGES
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:6:5-75
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:6:5-75
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:6:22-73
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:6:22-73
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:7:5-8:37
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:7:5-8:37
 	android:maxSdkVersion
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:8:9-35
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:7:22-77
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:7:22-77
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:9:5-64
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:9:5-64
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:9:22-62
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:9:22-62
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:10:5-84
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:10:5-84
 	android:required
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:10:58-82
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:10:58-82
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:10:19-57
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:10:19-57
 application
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:12:5-46:19
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:12:5-46:19
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:12:5-46:19
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:12:5-46:19
 MERGED from [androidx.room:room-runtime-android:2.8.4] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\6cec54ea806eec34b3a3dba5fb54bc11\transformed\jetified-room-runtime\AndroidManifest.xml:23:5-29:19
 MERGED from [androidx.room:room-runtime-android:2.8.4] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\6cec54ea806eec34b3a3dba5fb54bc11\transformed\jetified-room-runtime\AndroidManifest.xml:23:5-29:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\dc983194ae509935e907dc641adddc09\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
@@ -150,73 +150,73 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Al
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\4f2ad9cd40aa6d8891480e1012dc57e7\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\4f2ad9cd40aa6d8891480e1012dc57e7\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 	android:extractNativeLibs
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\c5cb08f4a957f8a546541b0ab20d179a\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:16:9-41
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:16:9-41
 	android:roundIcon
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:15:9-54
 	android:icon
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:17:9-59
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:17:9-59
 activity#com.example.spendwise.SplashActivity
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:20:9-28:20
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:20:9-28:20
 	android:exported
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:22:13-36
 	android:theme
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:23:13-63
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:23:13-63
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:21:13-43
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:21:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:24:13-27:29
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:24:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:25:17-68
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:25:17-68
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:26:17-76
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:26:17-76
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.example.spendwise.LoginActivity
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:30:9-75
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:30:9-75
 	android:exported
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:30:49-73
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:30:49-73
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:30:19-48
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:30:19-48
 activity#com.example.spendwise.RegisterActivity
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:31:9-78
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:31:9-78
 	android:exported
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:31:52-76
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:31:52-76
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:31:19-51
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:31:19-51
 activity#com.example.spendwise.MainActivity
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:32:9-74
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:32:9-74
 	android:exported
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:32:48-72
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:32:48-72
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:32:19-47
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:32:19-47
 activity#com.example.spendwise.ProfileActivity
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:33:9-77
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:33:9-77
 	android:exported
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:33:51-75
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:33:51-75
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:33:19-50
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:33:19-50
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:41:13-43:53
+ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:41:13-43:53
 	android:resource
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:43:17-51
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:43:17-51
 	android:name
-		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml:42:17-67
+		ADDED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml:42:17-67
 uses-sdk
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:9.2.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\b79b910b3b0c971b6f489720fcf2ee19\transformed\jetified-viewbinding-9.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:9.2.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\b79b910b3b0c971b6f489720fcf2ee19\transformed\jetified-viewbinding-9.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.room:room-runtime-android:2.8.4] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\6cec54ea806eec34b3a3dba5fb54bc11\transformed\jetified-room-runtime\AndroidManifest.xml:21:5-44
@@ -364,9 +364,9 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Alan Chauke\.gradle\caches\9.4
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\4f2ad9cd40aa6d8891480e1012dc57e7\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\4f2ad9cd40aa6d8891480e1012dc57e7\transformed\jetified-circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 	android:targetSdkVersion
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWiseFixed\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alan Chauke\AndroidStudioProjects\SpendWise\app\src\main\AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime-android:2.8.4] C:\Users\Alan Chauke\.gradle\caches\9.4.1\transforms\6cec54ea806eec34b3a3dba5fb54bc11\transformed\jetified-room-runtime\AndroidManifest.xml:24:9-28:63
 	android:exported

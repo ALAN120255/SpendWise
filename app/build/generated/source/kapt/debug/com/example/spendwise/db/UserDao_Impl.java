@@ -133,25 +133,24 @@ public final class UserDao_Impl implements UserDao {
   }
 
   @Override
-  public Object insert(final UserEntity user, final Continuation<? super Long> $completion) {
+  public Object insert(final UserEntity user, final Continuation<? super Long> arg1) {
     if (user == null) throw new NullPointerException();
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       return __insertAdapterOfUserEntity.insertAndReturnId(_connection, user);
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object update(final UserEntity user, final Continuation<? super Unit> $completion) {
+  public Object update(final UserEntity user, final Continuation<? super Unit> arg1) {
     if (user == null) throw new NullPointerException();
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       __updateAdapterOfUserEntity.handle(_connection, user);
       return Unit.INSTANCE;
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object findByEmail(final String email,
-      final Continuation<? super UserEntity> $completion) {
+  public Object findByEmail(final String email, final Continuation<? super UserEntity> arg1) {
     final String _sql = "SELECT * FROM users WHERE email = ? LIMIT 1";
     return DBUtil.performSuspending(__db, true, false, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -227,11 +226,11 @@ public final class UserDao_Impl implements UserDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object findById(final int id, final Continuation<? super UserEntity> $completion) {
+  public Object findById(final int id, final Continuation<? super UserEntity> arg1) {
     final String _sql = "SELECT * FROM users WHERE id = ? LIMIT 1";
     return DBUtil.performSuspending(__db, true, false, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -303,12 +302,12 @@ public final class UserDao_Impl implements UserDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
   public Object updateBudget(final int userId, final double budget,
-      final Continuation<? super Unit> $completion) {
+      final Continuation<? super Unit> arg2) {
     final String _sql = "UPDATE users SET monthlyBudget = ? WHERE id = ?";
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -322,7 +321,7 @@ public final class UserDao_Impl implements UserDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg2);
   }
 
   @NonNull

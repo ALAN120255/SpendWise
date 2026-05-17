@@ -24,8 +24,8 @@
         "source": "com.example.spendwise.app-main-57:/layout/fragment_dashboard.xml"
     },
     {
-        "merged": "com.example.spendwise.app-mergeDebugResources-54:/layout/fragment_budget.xml",
-        "source": "com.example.spendwise.app-main-57:/layout/fragment_budget.xml"
+        "merged": "com.example.spendwise.app-mergeDebugResources-54:/layout/fragment_advice.xml",
+        "source": "com.example.spendwise.app-main-57:/layout/fragment_advice.xml"
     },
     {
         "merged": "com.example.spendwise.app-mergeDebugResources-54:/layout/fragment_transactions.xml",

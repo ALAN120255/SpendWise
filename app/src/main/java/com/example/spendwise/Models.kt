@@ -42,6 +42,10 @@ data class Expense(
         "education"     -> "📚"
         else            -> "💳"
     }
+
+    fun isEssential(): Boolean = category.lowercase() in listOf(
+        "food", "transport", "health", "utilities", "rent", "education"
+    )
 }
 
 data class Income(
@@ -76,7 +80,7 @@ data class TransactionItem(
     val photoUrl: String = ""
 )
 
-// ── Gamification ──────────────────────────────────────────────
+// ── Gamification (income-based, essential-spend rewards) ───────────────────
 data class UserLevel(
     val level: Int,
     val title: String,
@@ -86,22 +90,50 @@ data class UserLevel(
     val unlockCondition: String
 )
 
+/**
+ * Essential categories are: Food, Transport, Health, Utilities, Rent, Education.
+ * XP is earned by:
+ *   - Spending on essential needs (10 XP per essential transaction, capped at 100)
+ *   - Keeping essential spend ratio healthy (>= 50% of expenses go to essentials → +75 XP)
+ *   - Spending within income (totalSpent <= totalIncome → +75 XP)
+ *   - Saving at least 10% of income (→ +50 XP)
+ *   - Saving at least 20% of income (→ +100 XP)
+ */
 object XPSystem {
     val levels = listOf(
-        UserLevel(1, "Budget Beginner",  0,   100, "🌱", "Log first 5 expenses"),
-        UserLevel(2, "Smart Spender",    100, 250, "💡", "Stay within category limits for one week"),
-        UserLevel(3, "Savings Sidekick", 250, 500, "🎯", "Reach 25% of monthly savings goal"),
-        UserLevel(4, "Money Maestro",    500, 800, "🏆", "Avoid overspending for one month"),
-        UserLevel(5, "Budget Ninja",     800, 800, "🥷", "Achieve all goals for three consecutive months")
+        UserLevel(1, "Needs Novice",       0,   100, "🌱", "Log first 5 essential purchases"),
+        UserLevel(2, "Smart Spender",      100, 250, "💡", "Keep 50%+ of spending on essentials"),
+        UserLevel(3, "Savings Sidekick",   250, 500, "🎯", "Save at least 10% of your income"),
+        UserLevel(4, "Essentials Expert",  500, 800, "🏆", "Save 20%+ and spend within income"),
+        UserLevel(5, "Budget Ninja",       800, 800, "🥷", "Master all goals consistently")
     )
 
-    fun calculateXP(expenseCount: Int, withinBudget: Boolean, savingsGoalPct: Double): Int {
+    fun calculateXP(
+        expenses: List<Expense>,
+        totalIncome: Double
+    ): Int {
         var xp = 0
-        xp += minOf(expenseCount * 10, 100)
-        if (withinBudget) xp += 75
-        if (savingsGoalPct >= 0.25) xp += 50
-        if (savingsGoalPct >= 1.0)  xp += 100
-        return xp
+        val essentialExpenses = expenses.filter { it.isEssential() }
+        val totalSpent = expenses.sumOf { it.amount }
+        val essentialSpent = essentialExpenses.sumOf { it.amount }
+
+        // Up to 100 XP for essential transactions logged
+        xp += minOf(essentialExpenses.size * 10, 100)
+
+        // 75 XP if >= 50% of spending is on essential needs
+        if (totalSpent > 0 && essentialSpent / totalSpent >= 0.5) xp += 75
+
+        // 75 XP for spending within income
+        if (totalIncome > 0 && totalSpent <= totalIncome) xp += 75
+
+        // 50 XP for saving 10%+ of income
+        val savingsRatio = if (totalIncome > 0) (totalIncome - totalSpent) / totalIncome else 0.0
+        if (savingsRatio >= 0.10) xp += 50
+
+        // 100 XP for saving 20%+ of income
+        if (savingsRatio >= 0.20) xp += 100
+
+        return xp.coerceAtLeast(0)
     }
 
     fun getLevelForXP(xp: Int): UserLevel = levels.lastOrNull { xp >= it.xp } ?: levels.first()

@@ -61,16 +61,15 @@ public final class IncomeDao_Impl implements IncomeDao {
   }
 
   @Override
-  public Object insert(final IncomeEntity income, final Continuation<? super Long> $completion) {
+  public Object insert(final IncomeEntity income, final Continuation<? super Long> arg1) {
     if (income == null) throw new NullPointerException();
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       return __insertAdapterOfIncomeEntity.insertAndReturnId(_connection, income);
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object getAll(final int userId,
-      final Continuation<? super List<IncomeEntity>> $completion) {
+  public Object getAll(final int userId, final Continuation<? super List<IncomeEntity>> arg1) {
     final String _sql = "SELECT * FROM incomes WHERE userId = ? ORDER BY date DESC";
     return DBUtil.performSuspending(__db, true, false, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -118,11 +117,11 @@ public final class IncomeDao_Impl implements IncomeDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object getTotal(final int userId, final Continuation<? super Double> $completion) {
+  public Object getTotal(final int userId, final Continuation<? super Double> arg1) {
     final String _sql = "SELECT SUM(amount) FROM incomes WHERE userId = ?";
     return DBUtil.performSuspending(__db, true, false, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -145,12 +144,11 @@ public final class IncomeDao_Impl implements IncomeDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object deleteById(final int id, final int userId,
-      final Continuation<? super Unit> $completion) {
+  public Object deleteById(final int id, final int userId, final Continuation<? super Unit> arg2) {
     final String _sql = "DELETE FROM incomes WHERE id = ? AND userId = ?";
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -164,7 +162,7 @@ public final class IncomeDao_Impl implements IncomeDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg2);
   }
 
   @NonNull

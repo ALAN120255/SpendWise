@@ -66,16 +66,15 @@ public final class ExpenseDao_Impl implements ExpenseDao {
   }
 
   @Override
-  public Object insert(final ExpenseEntity expense, final Continuation<? super Long> $completion) {
+  public Object insert(final ExpenseEntity expense, final Continuation<? super Long> arg1) {
     if (expense == null) throw new NullPointerException();
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       return __insertAdapterOfExpenseEntity.insertAndReturnId(_connection, expense);
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object getAll(final int userId,
-      final Continuation<? super List<ExpenseEntity>> $completion) {
+  public Object getAll(final int userId, final Continuation<? super List<ExpenseEntity>> arg1) {
     final String _sql = "SELECT * FROM expenses WHERE userId = ? ORDER BY date DESC";
     return DBUtil.performSuspending(__db, true, false, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -130,11 +129,11 @@ public final class ExpenseDao_Impl implements ExpenseDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object getTotal(final int userId, final Continuation<? super Double> $completion) {
+  public Object getTotal(final int userId, final Continuation<? super Double> arg1) {
     final String _sql = "SELECT SUM(amount) FROM expenses WHERE userId = ?";
     return DBUtil.performSuspending(__db, true, false, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -157,12 +156,11 @@ public final class ExpenseDao_Impl implements ExpenseDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg1);
   }
 
   @Override
-  public Object deleteById(final int id, final int userId,
-      final Continuation<? super Unit> $completion) {
+  public Object deleteById(final int id, final int userId, final Continuation<? super Unit> arg2) {
     final String _sql = "DELETE FROM expenses WHERE id = ? AND userId = ?";
     return DBUtil.performSuspending(__db, false, true, (_connection) -> {
       final SQLiteStatement _stmt = _connection.prepare(_sql);
@@ -176,7 +174,7 @@ public final class ExpenseDao_Impl implements ExpenseDao {
       } finally {
         _stmt.close();
       }
-    }, $completion);
+    }, arg2);
   }
 
   @NonNull

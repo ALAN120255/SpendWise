@@ -29,6 +29,7 @@
     <dimen name="text_size_small">12sp</dimen>
     <string name="add_category">Add Custom Category</string>
     <string name="add_transaction">Add Transaction</string>
+    <string name="advice">Advice</string>
     <string name="amount_hint">Amount</string>
     <string name="app_name">SpendWise</string>
     <string name="budget">Budget</string>

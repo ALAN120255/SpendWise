@@ -33,7 +33,7 @@ public final class SpendWiseDatabase_Impl extends SpendWiseDatabase {
   @Override
   @NonNull
   protected RoomOpenDelegate createOpenDelegate() {
-    final RoomOpenDelegate _openDelegate = new RoomOpenDelegate(1, "48d2b80900259baa38db39cc6b177666", "98d762349c715cba1373b9c349d3d7f6") {
+    final RoomOpenDelegate _openDelegate = new RoomOpenDelegate(2, "48d2b80900259baa38db39cc6b177666", "98d762349c715cba1373b9c349d3d7f6") {
       @Override
       public void createAllTables(@NonNull final SQLiteConnection connection) {
         SQLite.execSQL(connection, "CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `firstName` TEXT NOT NULL, `lastName` TEXT NOT NULL, `gender` TEXT NOT NULL, `email` TEXT NOT NULL, `passwordHash` TEXT NOT NULL, `profileImageUrl` TEXT NOT NULL, `monthlyBudget` REAL NOT NULL, `currency` TEXT NOT NULL)");

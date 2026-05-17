@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.spendwise.app-debug-55:/layout_fragment_budget.xml.flat",
-        "source": "com.example.spendwise.app-main-57:/layout/fragment_budget.xml"
-    },
-    {
         "merged": "com.example.spendwise.app-debug-55:/drawable_spinner_background.xml.flat",
         "source": "com.example.spendwise.app-main-57:/drawable/spinner_background.xml"
     },
@@ -14,6 +10,10 @@
     {
         "merged": "com.example.spendwise.app-debug-55:/drawable_ic_dashboard.xml.flat",
         "source": "com.example.spendwise.app-main-57:/drawable/ic_dashboard.xml"
+    },
+    {
+        "merged": "com.example.spendwise.app-debug-55:/layout_fragment_advice.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/layout/fragment_advice.xml"
     },
     {
         "merged": "com.example.spendwise.app-debug-55:/mipmap-mdpi_ic_launcher.xml.flat",
@@ -102,6 +102,10 @@
     {
         "merged": "com.example.spendwise.app-debug-55:/menu_bottom_nav_menu.xml.flat",
         "source": "com.example.spendwise.app-main-57:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "com.example.spendwise.app-debug-55:/drawable_ic_advice.xml.flat",
+        "source": "com.example.spendwise.app-main-57:/drawable/ic_advice.xml"
     },
     {
         "merged": "com.example.spendwise.app-debug-55:/layout_fragment_settings.xml.flat",

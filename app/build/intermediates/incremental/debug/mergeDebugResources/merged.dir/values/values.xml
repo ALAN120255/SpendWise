@@ -2035,6 +2035,7 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="add_category">Add Custom Category</string>
     <string name="add_transaction">Add Transaction</string>
+    <string name="advice">Advice</string>
     <string name="amount_hint">Amount</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">SpendWise</string>
